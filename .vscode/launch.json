@@ -1,0 +1,42 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug executable 'vscode_lldb_347_crash_reproduce'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=vscode_lldb_347_crash_reproduce",
+                    "--package=vscode_lldb_347_crash_reproduce"
+                ],
+                "filter": {
+                    "name": "vscode_lldb_347_crash_reproduce",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in executable 'vscode_lldb_347_crash_reproduce'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--bin=vscode_lldb_347_crash_reproduce",
+                    "--package=vscode_lldb_347_crash_reproduce"
+                ],
+                "filter": {
+                    "name": "vscode_lldb_347_crash_reproduce",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
